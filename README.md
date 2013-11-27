@@ -28,5 +28,7 @@ estrutura[1].key = 1;
 estrutura[1].texto, "teste var 1";
 estrutura[1].num = 27;
 
-test2.c lê parametros da linha de comando. Se houver um só parametro ela libera a posição de memória indicada pelo parametro, se houver 2 parametros, se o primeiro for 1 ela recupera e imprime na tela os dados como se fosse um vetor de inteiros, se for 2 como um vetor da esrutura cobaia de 2 posições.
+test2.c lê parametros da linha de comando. Se houver um só parametro ela libera a posição de memória indicada pelo parametro, se houver 2 parametros, se o primeiro for 1 ela recupera e imprime na tela os dados recuperados a partir da posição de memória indicada pelo segundo parâmetro como se fosse um vetor de inteiros, se for 2 como um vetor da estrutura cobaia de 2 posições.
+
+Obs: o patch foi feito a partir do kernel disponibilizado para fazer o projeto. Para aplicar o patch tive que executar "patch -p1 < 0001-x86-kernel-kern_buf-Syscall-351-kern_buf-added.patch" na pasta anterior a mc504-linux para que fosse aplicado corretamente.
 
